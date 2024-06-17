@@ -10,3 +10,18 @@ btnElement.addEventListener('click',()=>{
   document.querySelector('.element').innerHTML=`#${required_color}`;
   document.body.style.backgroundColor=`#${required_color}`;
 })
+
+//Toggle 
+let menuList= document.getElementById('menu-list');
+menuList.style.maxHeight="0px";
+
+
+function toggleMenu(){
+if(menuList.style.maxHeight=="0px"){
+  menuList.style.maxHeight="300px";
+}
+else{
+  menuList.style.maxHeight="0px"
+}
+
+}
